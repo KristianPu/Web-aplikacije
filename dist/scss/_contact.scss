@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+}
+
+.contact {
+
+    height: 100%;
+    padding-top: 10vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    // POPRAVITI SCROLL NA KRAJU
+    background: linear-gradient(
+                to right,
+                rgba(black, 0.8),
+                rgba(black, 0.8)
+    ),
+        url('../img/PODS.jpg') center top;
+    background-size: cover;
+
+    &__div {
+        display: block;
+        text-align: center;
+
+        &--form {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            color: $secondary-text-color;
+
+            div {
+                color: $secondary-text-color;
+
+                input {
+                    color: $secondary-text-color;
+                }
+            }
+        }
+    }
+
+};

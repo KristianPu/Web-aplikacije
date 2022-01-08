@@ -1,0 +1,38 @@
+.about {
+    display: block;
+    height: 100%;
+    padding-top: 10vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    // POPRAVITI SCROLL NA KRAJU
+    background: linear-gradient(
+                to right,
+                rgba(black, 0.8),
+                rgba(black, 0.8)
+    ),
+        url('../img/SHENRONABOUT.jpg') center top;
+    background-size: cover;
+
+    h2 {
+        color: $secondary-text-color;
+        font-size: 50px;
+        margin-left: 2rem;
+    }
+    video {
+        position: relative;
+        float: left;
+        margin-top: 4rem;
+        margin-left: 1rem;
+        padding-right: 2rem;
+    }
+    p {
+        color: $secondary-text-color;
+        font-size: 20px;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,40 @@
+.gallery {
+    display: block;
+    height: 100%;
+    padding-top: 10vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    // POPRAVITI SCROLL NA KRAJU
+    background: linear-gradient(
+                to right,
+                rgba(black, 0.8),
+                rgba(black, 0.8)
+    ),
+        url('../img/GALLERY.png') center top;
+    background-size: cover;
+
+    &__fig {
+        padding: 1rem;
+        padding-bottom: 1rem;
+        margin: 1rem 1.2rem 1rem 1rem;
+        float: left;
+        min-width: 23%;
+        border: 1px solid $primary-color;
+        img {
+            width: 400px;
+            &:hover {
+                opacity: 0.7;
+                @include transition-ease;
+            }
+        }
+        figcaption {
+            font-size: 1.5rem;
+            color: $secondary-text-color;
+            height: 30px;
+            text-align: center;
+        }
+    }
+};

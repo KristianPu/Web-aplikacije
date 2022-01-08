@@ -1,0 +1,68 @@
+.news {
+    height: 100%;
+    padding-top: 10vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    background: linear-gradient(
+                to right,
+                rgba(black, 0.8),
+                rgba(black, 0.8)
+    ),
+        url('../img/NEWS.jpg') center top;
+    background-size: cover;
+
+    div {
+        align-content: center;
+        margin-top: 2rem;
+        padding-bottom: 3.5rem;
+        padding-top: 0rem;
+        padding-left: 5rem;
+        padding-right: 2rem;
+
+    }
+
+    &__link {
+        text-decoration: none;
+
+        img {
+            //position: relative;
+            float: left;
+            max-width: 300px;
+
+            &:hover {
+                opacity: 0.7;
+                @include transition-ease;
+            }
+        }
+    }
+
+    &__title {
+        color: $primary-color;
+        font-size: 2rem;
+        float: center;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            @include transition-ease;
+        }
+    }
+
+    &__p {
+        color: $secondary-text-color;
+        margin: 1rem;
+        line-height: 1.4rem;
+        letter-spacing: 1px;
+
+        a {
+            text-decoration: none;
+        }
+
+        time {
+            font-size: 14px
+        }
+    }
+};

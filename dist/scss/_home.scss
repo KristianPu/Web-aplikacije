@@ -1,0 +1,51 @@
+.home {
+    height: 100%;
+    padding-top: 10vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+    // POPRAVITI SCROLL NA KRAJU
+    background: linear-gradient(
+                to right,
+                rgba(black, 0.8),
+                rgba(black, 0.8)
+    ),
+        url('../img/DRAGONBALL.jpg') center top;
+    background-size: cover;
+
+    &__p {
+        color: #f8f8f8;
+        font-family:fantasy;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    &__fig {
+        display: block;
+        img {
+            max-width: 720px;
+            height: auto;
+            padding: 1rem 1rem;
+        }
+
+        &--cap {
+            font-family: fantasy;
+            font-size: 25px;
+            padding: 2rem 1rem;
+            color: white;
+        }
+    }
+
+    &__title {
+        font-family: fantasy;
+        font-size: 7rem;
+        color: $title-color;
+        padding-bottom: 1rem;  /* padding bottom odmice crtu ispod teksta malo nize da izgleda bolje */
+        margin-top: 1rem; /* margin top je ovdje zbog centriranja teksta da nebude pre visoko */
+    }
+}
